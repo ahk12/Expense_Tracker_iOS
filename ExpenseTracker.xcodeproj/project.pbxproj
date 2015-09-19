@@ -13,6 +13,9 @@
 		0D5FA6BB1BA2233D00018CF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5FA6BA1BA2233D00018CF0 /* Images.xcassets */; };
 		0D5FA6BE1BA2233D00018CF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D5FA6BC1BA2233D00018CF0 /* LaunchScreen.xib */; };
 		0D5FA6CA1BA2233D00018CF0 /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5FA6C91BA2233D00018CF0 /* ExpenseTrackerTests.swift */; };
+		0D5FA6D41BA22DE600018CF0 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5FA6D31BA22DE600018CF0 /* AddExpenseViewController.swift */; };
+		0D5FA6D61BA233A500018CF0 /* ExpenseListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5FA6D51BA233A500018CF0 /* ExpenseListTableViewController.swift */; };
+		0D5FA6D81BA236F700018CF0 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5FA6D71BA236F700018CF0 /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		0D5FA6C31BA2233D00018CF0 /* ExpenseTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5FA6C81BA2233D00018CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D5FA6C91BA2233D00018CF0 /* ExpenseTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerTests.swift; sourceTree = "<group>"; };
+		0D5FA6D31BA22DE600018CF0 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		0D5FA6D51BA233A500018CF0 /* ExpenseListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseListTableViewController.swift; sourceTree = "<group>"; };
+		0D5FA6D71BA236F700018CF0 /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,14 @@
 		0D5FA6B01BA2233D00018CF0 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				0D5FA6D31BA22DE600018CF0 /* AddExpenseViewController.swift */,
 				0D5FA6B31BA2233D00018CF0 /* AppDelegate.swift */,
+				0D5FA6D71BA236F700018CF0 /* Expense.swift */,
+				0D5FA6D51BA233A500018CF0 /* ExpenseListTableViewController.swift */,
 				0D5FA6B51BA2233D00018CF0 /* ViewController.swift */,
-				0D5FA6B71BA2233D00018CF0 /* Main.storyboard */,
 				0D5FA6BA1BA2233D00018CF0 /* Images.xcassets */,
 				0D5FA6BC1BA2233D00018CF0 /* LaunchScreen.xib */,
+				0D5FA6B71BA2233D00018CF0 /* Main.storyboard */,
 				0D5FA6B11BA2233D00018CF0 /* Supporting Files */,
 			);
 			path = ExpenseTracker;
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5FA6B61BA2233D00018CF0 /* ViewController.swift in Sources */,
+				0D5FA6D41BA22DE600018CF0 /* AddExpenseViewController.swift in Sources */,
+				0D5FA6D61BA233A500018CF0 /* ExpenseListTableViewController.swift in Sources */,
 				0D5FA6B41BA2233D00018CF0 /* AppDelegate.swift in Sources */,
+				0D5FA6D81BA236F700018CF0 /* Expense.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

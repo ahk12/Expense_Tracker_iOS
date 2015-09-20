@@ -12,6 +12,7 @@ class ExpenseListTableViewController: UITableViewController {
 
     
     var expenseList: [Expense] = []
+    var Categories: [String] = ["Food", "Rent", "Alcohol"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,14 +89,23 @@ class ExpenseListTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        if(segue.identifier == "NewExpense") {
+            let addExpenseVC = segue.destinationViewController as! AddExpenseViewController
+            if let indexPath = self.tableView.indexPathForCell(sender as! UITableViewCell){
+                let tappedExpense = self.expenseList[indexPath.row]
+                addExpenseVC.Categories = Categories
+            }
+        }
+        
     }
-    */
+    
+    
 
 }

@@ -10,6 +10,14 @@ import UIKit
 
 class AddExpenseViewController: UIViewController {
 
+    
+    var newExpense: Expense!
+    var Categories: [String]?
+    
+    @IBOutlet weak var namePlaceholder: UITextField!
+    @IBOutlet weak var nameField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +29,14 @@ class AddExpenseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func textViewDidChange(descriptionField: UITextView) {
+        if nameField.text.isEmpty == false {
+            namePlaceholder.text = ""
+        } else {
+            namePlaceholder.text = "Name"
+        }
+    }
 
     /*
     // MARK: - Navigation

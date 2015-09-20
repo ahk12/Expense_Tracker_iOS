@@ -15,6 +15,7 @@ class Expense: NSObject {
     var Amount: NSNumber
     var Category: String
     
+    
     init(itemName: String, Date: NSDate, Amount: NSNumber, Category: String){
         self.itemName = itemName
         self.Date = Date
